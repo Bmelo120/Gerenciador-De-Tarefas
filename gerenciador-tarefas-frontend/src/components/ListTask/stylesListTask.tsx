@@ -2,14 +2,11 @@ import styled from 'styled-components';
 
 
 export const Title = styled.h2`
-   position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
   font-size: 28px;
   color: #fff;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin: 40px 0;
 `
 
 export const List = styled.div`
