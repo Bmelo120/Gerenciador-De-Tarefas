@@ -1,9 +1,9 @@
 📌 Desafio Proposto
-Projeto Full Stack de Gerenciamento de Projetos.
-As funcionalidades implementadas estão descritas abaixo:
+Projeto Full Stack de Gerenciamento de Projetos. As funcionalidades implementadas estão descritas abaixo:
 
 ✅ Funcionalidades
-Criar uma tarefa (POST)
+
+ Criar uma tarefa (POST)
 
 Adicionar à tarefa:
 
