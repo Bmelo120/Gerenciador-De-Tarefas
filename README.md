@@ -1,13 +1,25 @@
-#Desáfio proposto 
+📌 Desafio Proposto
+Projeto Full Stack de Gerenciamento de Projetos.
+As funcionalidades implementadas estão descritas abaixo:
 
-Projeto Full Stack de Gerenciamento de Projetos, abaixo está as descrições.
+✅ Funcionalidades
+Criar uma tarefa (POST)
 
-- Cria uma tarefa (POST)
-- Dentro da tarefa adicionar: Nome, Descrição, Data de inicio e Data de conclusão
-- Fazer a listagem das tarefas (GET)
-- Após criar uma tarefa marcar como lida (PUT)
-- Excluir as tarefas (DELETE)
+Adicionar à tarefa:
 
+Nome
+
+Descrição
+
+Data de início
+
+Data de conclusão
+
+Listar todas as tarefas (GET)
+
+Marcar uma tarefa como lida (PUT)
+
+Excluir tarefas (DELETE)
 
 #Back-end 
 
