@@ -10,7 +10,7 @@ Projeto Full Stack de **Gerenciamento de Projetos**. Funcionalidades propostas:
 ---
 
 
-## Back-end 
+## Back-end  (/Backend/)
 
 Foi desenvolvido em Node.js, arquitetura MVC, utilizando Express e Sequelize com Mysql Workbench, rodando localmente. 
 
@@ -18,7 +18,7 @@ Foi desenvolvido em Node.js, arquitetura MVC, utilizando Express e Sequelize com
 
 - Db.js - Configura a conexão com o um banco de dados MySQL usando Sequelize, a escolha do sequelize foi porque, permite interagir com bancos relacionais.
 
-- Models - Contem dois arquivos modelos Sequelize:
+- Models (/models/)- Contem dois arquivos modelos Sequelize:
   - Tarefa.js: Define a estrutura da tabela de tarefas.
   - Conectdb.js: Testa a conexão e sincroniza os modelos com o banco.
 
@@ -29,18 +29,18 @@ Foi desenvolvido em Node.js, arquitetura MVC, utilizando Express e Sequelize com
 - Index.js - Sincroniza com o Banco de dados e inicia o servidor.
 
 
-## Front-end
+## Front-end (/gerenciador-tarefas-frontend/)
 
 Desenvolvido com React, TypeScript, Vite e Material UI.
 
 ## Services
 
-- api.ts -Arquivo resposável por configurar a comunicação com o back-end usando Axios para criar e listar tarefas.
+- api.ts(/src/services/api.ts) -Arquivo resposável por configurar a comunicação com o back-end usando Axios para criar e listar tarefas.
 
 ## Components 
 
-- AddTask - Componente responsável por exibir o botão de adicionar tarefa e abrir um modal com um formulário para criar uma nova tarefa.
-- ListaTask - Componente responsável por buscar e exibir na tela todas as tarefas salvas no banco.
+- AddTask (/src/components/AddTask/)- Componente responsável por exibir o botão de adicionar tarefa e abrir um modal com um formulário para criar uma nova tarefa.
+- ListTask (/src/components/ListTask/) - Componente responsável por buscar e exibir na tela todas as tarefas salvas no banco.
 
 
 ## Documentações utilizadas
