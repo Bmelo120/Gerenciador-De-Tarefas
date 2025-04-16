@@ -43,3 +43,12 @@ Desenvolvido com React, TypeScript, Vite e Material UI.
 - ListaTask - Componente responsável por buscar e exibir na tela todas as tarefas salvas no banco.
 
 
+## Documentações utilizadas
+
+https://www.luiztools.com.br/post/como-criar-uma-webapi-com-node-js-express-e-typescript/?utm_source=google&utm_medium=cpc&utm_campaign=12231680300&utm_content=151110166044&utm_term=webapi%20node%20express&gad_source=1&gclid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac8DWBTCQEZubkQz6DN0nJzV9U3rui4Gi89qaTs_rk57zkS1T5Wkjd4aAjCDEALw_wcB
+
+https://medium.com/@habbema/nodejs-padr%C3%A3o-mvc-2f4e16b79cb8
+
+https://medium.com/@antusaha970/serving-react-and-express-together-mastering-mvc-in-mern-6a1c9664e69a
+
+https://www.freecodecamp.org/portuguese/news/como-criar-um-app-em-react-com-o-back-end-em-node-o-guia-completo/
