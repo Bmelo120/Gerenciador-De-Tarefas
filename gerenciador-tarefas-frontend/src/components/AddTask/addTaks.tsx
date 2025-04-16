@@ -6,7 +6,10 @@ import { criarTarefa, Task } from "../../services/api"
   
 
 const AddTask = ( ) => {
+    //Controla se o modal está aberto ou fechado
     const [open, setOpen] = useState(false)
+
+    //Armazena os dados do formulário
     const [newTask, setNewTask] = useState<Task>({
         nome: '',
         descricao: '',
@@ -14,18 +17,22 @@ const AddTask = ( ) => {
         dataConclusao: '',
     })
 
+    //abre o modal
     const handleClickOpen = () => {
         setOpen(true)
     }
 
+    //fecha o modal
     const handleClose = () => {
         setOpen(false)
     }
 
+    //Envia os dados para o back-end
     const handleSave = async () => {
         try {
             await criarTarefa(newTask);
             alert("Tarefa criada com sucesso!");
+            //limpa os dados
             setNewTask({
               nome: '',
               descricao: '',
@@ -54,12 +61,14 @@ const AddTask = ( ) => {
             <DialogContainer>
                 <DialogTitle> Nova Tarefa </DialogTitle>
        
+                {/* Cada campo é ligado ao estado NewTask e atualiza com a onChange */}
                 <DialogFields>
                     <input
                         type="text"
                         placeholder="Nome da Tarefa"
                         name="nome"
                         value={newTask.nome}
+                    // escuta o evento da função, copia o objeto atual e altera para o valor digitado no campo
                         onChange={(e) => setNewTask({...newTask, nome: e.target.value})}
                     />
                     <input
