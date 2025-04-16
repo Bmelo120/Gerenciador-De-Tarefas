@@ -29,6 +29,7 @@ export const DialogFields= styled.div`
    flex-direction: column;
    gap: 12px;
    margin-bottom: 16px;
+   background-color: #f9f9f9;
 
     input {
     padding: 10px;
