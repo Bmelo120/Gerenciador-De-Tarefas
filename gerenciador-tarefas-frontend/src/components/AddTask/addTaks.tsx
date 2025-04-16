@@ -8,7 +8,7 @@ import { criarTarefa, Task } from "../../services/api"
 const AddTask = ( ) => {
     const [open, setOpen] = useState(false)
     const [newTask, setNewTask] = useState<Task>({
-        titulo: '',
+        nome: '',
         descricao: '',
         dataInicio: '',
         dataConclusao: '',
@@ -27,12 +27,13 @@ const AddTask = ( ) => {
             await criarTarefa(newTask);
             alert("Tarefa criada com sucesso!");
             setNewTask({
-              titulo: '',
+              nome: '',
               descricao: '',
               dataInicio: '',
               dataConclusao: '',
             });
-            handleClose(); 
+            handleClose();
+            window.location.reload();
           } catch (error) {
             console.error("Erro ao criar tarefa:", error);
             alert("Erro ao criar tarefa");
@@ -57,9 +58,9 @@ const AddTask = ( ) => {
                     <input
                         type="text"
                         placeholder="Nome da Tarefa"
-                        name="titulo"
-                        value={newTask.titulo}
-                        onChange={(e) => setNewTask({...newTask, titulo: e.target.value})}
+                        name="nome"
+                        value={newTask.nome}
+                        onChange={(e) => setNewTask({...newTask, nome: e.target.value})}
                     />
                     <input
                         type="text"

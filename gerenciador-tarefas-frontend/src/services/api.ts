@@ -1,7 +1,8 @@
 import axios from 'axios'
 
 export interface Task {
-    titulo: string;
+    id?: string;
+    nome: string;
     descricao: string;
     dataInicio: string;
     dataConclusao: string;
@@ -14,7 +15,7 @@ const api = axios.create({
 
 export const criarTarefa = (novaTarefa: Task) => api.post('/tarefas', novaTarefa);
 
-export const getTarefas = () => api.get('/tarefas');
+export const listarTarefas = () => api.get<Task[]>('/tarefas');
 
 // export const marcarComoLida = (id) => api.put(`/tarefas/${id}/lida`);
 

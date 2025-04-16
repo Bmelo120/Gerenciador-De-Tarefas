@@ -1,4 +1,4 @@
-const { DataTypes } = require('sequelize');
+const DataTypes  = require('sequelize');
 const sequelize = require('../db');
 
 const Tarefa = sequelize.define('Tarefa', {
@@ -13,6 +13,7 @@ const Tarefa = sequelize.define('Tarefa', {
   },
   descricao: {
     type: DataTypes.TEXT,
+    allowNull: false
   },
   dataInicio: {
     type: DataTypes.DATE,
